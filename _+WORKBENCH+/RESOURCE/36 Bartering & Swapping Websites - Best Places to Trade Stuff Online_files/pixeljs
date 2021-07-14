@@ -1,0 +1,23 @@
+
+
+var ref = encodeURIComponent(document.referrer);
+
+var i = document.createElement("img");
+i.src = location.protocol + "//aa.agkn.com/adscores/g.pixel?sid=9212284628&ip=41.215.172.165&page=" + ref;
+i.height=0;i.width=0;i.style="display:none; visibility: hidden";
+document.body.appendChild(i);
+
+
+var r = new XMLHttpRequest();
+r.withCredentials = true;
+var s ="r=" + ref;
+if (!(typeof dianomi_tag_params === "undefined")) {
+	for (var property in dianomi_tag_params) {
+		if (dianomi_tag_params.hasOwnProperty(property)) {
+			s += "&" + property + "=" + encodeURIComponent(dianomi_tag_params[property]);
+		}
+	}
+}
+
+r.open("GET", location.protocol + "//data.dianomi.com/frontend/pixel?" + s, true);
+r.send();

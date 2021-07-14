@@ -1,0 +1,644 @@
+@charset "utf-8";
+
+
+form,
+form *{
+	font-family: "Segoe UI", Arial;
+	font-size: 10.5pt;
+	margin: 0;
+	padding: 0;
+}
+
+#frm-caption{
+	margin: 0 0 25px 0;
+	text-align: left;
+}
+
+
+form [type="text"],
+form [type="password"],
+form [type="email"],
+form select,
+form textarea{
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 10px 3%;
+	width: 94%;
+}
+
+form textarea{
+	height: 200px;
+}
+
+form article{
+	margin: 15px 0;
+	padding: 0 2% 0 0;
+	overflow: hidden;
+	width: 98%
+}
+
+form article div{
+	display: block;
+}
+
+form article div.col-50{
+	margin-right: 0%;
+	margin-bottom: 4%;
+	width: 100%;
+}
+
+form article div.col-50:nth-child(3n){
+	margin-right: 0%;
+}
+
+form label{
+	display: inline-block;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+
+form article div.col-50 input{
+	padding: 10px 6%;
+	width: 88%;
+}
+
+
+@media only screen and (min-width: 600px){
+	form article div.col-50{
+		float: left;
+		margin-bottom: 0%;
+		margin-right: 4%;
+		width: 48%;
+	}
+}
+
+
+form button{
+	border: none;
+	background-color: #000;
+	border-radius: 2px;
+	color: #fff;
+	margin-right: 3%;
+	padding: 10px 20px;
+}
+
+form button:hover{
+	background-color: #FF820A;
+}
+
+
+
+
+/* search block */
+header.home-header .search-block{
+	/*display: none;*/
+}
+
+header.home-header .search-block-min{
+	padding: 3% 6%;
+}
+
+@media only screen and (min-width: 800px){
+	header.home-header .search-block{
+		display: inline-block;
+		padding: 0% 0% 0 3%;
+		width: 60%;
+	}
+	
+	header.home-header .search-block-min{
+		display: none;
+	}
+}
+
+header.home-header .search-block-min form,
+header.home-header .search-block form{
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 5px 0;
+	position: relative;
+}
+
+header.home-header .search-block-min [type="text"],
+header.home-header .search-block [type="text"]{
+	border: none;
+	padding: 10px 7% 10px 3%;
+}
+
+header.home-header .search-block-min [type="text"],
+header.home-header .search-block [type="text"]{
+	width: 90%;
+}
+
+header.home-header .search-block-min [type="submit"],
+header.home-header .search-block [type="submit"]{
+	background-color: #000;
+	border: none;
+	border-radius: 2px; 
+	color: #fff;
+	float: right;
+	margin-right: 5px;
+	padding: 10px;
+	top: 5px;
+	position: absolute;
+	right: 0;
+}
+
+header.home-header .search-block-min [type="submit"]:hover,
+header.home-header .search-block [type="submit"]:hover{
+	background-color: #FF820A;
+}
+
+header.home-header .search-block-min #adv-search-btn,
+header.home-header .search-block #adv-search-btn{
+	color: #666;
+	display: inline-block;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+header.home-header .search-block-min #adv-search-btn:hover,
+header.home-header .search-block #adv-search-btn:hover{
+	color: #000;
+	text-decoration: underline;
+}
+
+
+
+/* registration form */
+.reg-ul{
+	margin: 3% 0 0 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.reg-ul li{
+	float: left;
+	min-height: ;
+	width: 100%;
+}
+
+.reg-ul li.right-col{
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.reg-ul li.right-col a{
+	color: #FF820A;
+}
+
+.reg-ul li.right-col a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+
+.reg-ul li .trader-regfrm{
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 4%;
+	margin-bottom: 7%;  
+	position: relative;
+}
+
+.reg-ul li .trader-regfrm label.lbl-tandc{
+	font-weight: normal;
+}
+
+.reg-ul li .trader-regfrm label.lbl-tandc a{
+	color: #FF820A;
+}
+
+.reg-ul li .trader-regfrm label.lbl-tandc a:hover{
+	color: #000;
+}
+
+
+@media only screen and (min-width: 600px){
+	.reg-ul{
+		margin: 3% 0 0 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+	}
+
+	.reg-ul li{
+		float: right;
+		min-height: 400px;
+		width: 46.9%;
+	}
+
+	.reg-ul li.right-col{
+		border-bottom: none;
+		border-left: 1px dotted #ddd;
+		padding-left: 3%;
+	}
+
+	.reg-ul li.right-col a{
+		color: #FF820A;
+	}
+
+	.reg-ul li.right-col a:hover{
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.reg-ul li .trader-regfrm{
+		border-bottom: 1px dotted #ddd;
+		padding-bottom: 4%;
+		margin-bottom: 7%;  
+		position: relative;
+	}
+
+	.reg-ul li .trader-regfrm label.lbl-tandc{
+		font-weight: normal;
+	}
+
+	.reg-ul li .trader-regfrm label.lbl-tandc a{
+		color: #FF820A;
+	}
+
+	.reg-ul li .trader-regfrm label.lbl-tandc a:hover{
+		color: #000;
+	}
+
+}
+
+
+/*
+.reg-ul li .trader-regfrm [type="text"],
+.reg-ul li .trader-regfrm [type="password"],
+.reg-ul li .trader-regfrm [type="email"],
+.reg-ul li .trader-regfrm select{
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 10px 3%;
+	width: 94%;
+}*/
+
+
+
+
+.list-offerfrm{}
+
+.list-offerfrm #ast{
+	color: #f00;
+}
+
+.list-offerfrm #sep{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.list-offerfrm select{
+	width: 100%;
+}
+
+.list-offerfrm [type="text"],
+.list-offerfrm textarea{
+	width: 93%;
+}
+
+.list-offerfrm textarea{
+	height: 100px;
+}
+
+.list-offerfrm #main-title{
+	display: block;
+	margin-top: 0px;
+}
+
+.list-offerfrm #tag{
+	background-color: #eee;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+@media only screen and (min-width: 800px){
+	.list-offerfrm{
+		width: 60%;
+	}
+}
+
+
+
+
+
+/* to login */
+.to-login{
+	text-align: center;
+}
+
+.to-login #frm-caption{
+	text-align: center;
+}
+
+.to-login #login-btn{
+	border-radius: 2px;
+	display: inline-block;
+	color: #fff;
+	background-color: #FF820A;
+	padding: 10px 20%;
+}
+
+.to-login #login-btn:hover{
+	background-color: #F07800;
+	text-decoration: none;
+}
+
+
+
+
+/*  */
+.reg-ul li.left-col{
+	padding-right: 0%;
+	text-align: center;
+}
+
+.reg-ul li.left-col #frm-caption{
+	margin: 0 0 25px 0;
+	text-align: center;
+}
+
+.reg-ul li.left-col .sep{
+	clear: both;
+	margin: 40px 0;
+}
+
+.reg-ul li.left-col .fa{
+	color: #ccc;
+	display: block;
+	font-size: 30pt;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+@media only screen and (min-width: 600px){
+	.reg-ul li.left-col{
+		text-align: left;
+		padding-right: 3%;
+	}
+
+	.reg-ul li.left-col #frm-caption{
+		text-align: left;
+		padding-right: ;
+	}
+
+	.reg-ul li.left-col .sep{
+		clear: both;
+		margin: 40px 0;
+	}
+
+	.reg-ul li.left-col .fa{
+		color: #ccc;
+		display: inline-block;
+		font-size: 60pt;
+		margin-right: 10px;
+		vertical-align: middle;
+		width: 70pt;
+	}
+}
+
+
+
+
+/* list offer */
+.offer-photos,
+.user-photos{
+	width: 96%;
+	min-height: 100px;
+}
+
+.offer-photos .picHolder,
+.user-photos .picHolder{
+	cursor: pointer;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	padding: 0 !important;
+	position: relative;
+	overflow: hidden;
+	height: 100px;
+	width: 100px;
+}
+
+.offer-photos .picHolder article,
+.user-photos .picHolder article{
+	background: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	width: 100px;
+}
+
+.offer-photos .picHolder [type="file"],
+.user-photos .picHolder [type="file"]{
+	position: absolute;
+	visibility: hidden; 
+}
+
+.offer-photos .picHolder .fa-camera,
+.user-photos .picHolder .fa-camera{
+	color: #ccc;
+	font-size: 40px;
+	position: absolute;
+	left: 28px;
+	top: 32px;
+	z-index: 1;
+}
+
+.offer-photos .picHolder:hover .fa-camera,
+.user-photos .picHolder:hover .fa-camera{
+	color: #000;
+}
+
+.offer-photos .picHolder .thumb-image,
+.user-photos .picHolder .thumb-image{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	height: 120px;
+	/*width: 100%;*/
+	z-index: 100;
+}
+
+
+.offer-photos .picHolder .default-img,
+.user-photos .picHolder .default-img{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 200;
+}
+
+
+@media only screen and (min-width: 600px){
+	.offer-photos .picHolder{
+		height: 120px;
+		width: 120px;
+	}
+
+	.offer-photos .picHolder article{
+		height: 120px;
+		width: 120px;
+	}
+
+	.offer-photos .picHolder .fa-camera{
+		font-size: 60px;
+	}
+}
+
+
+
+
+
+/* make offer form */
+.myOfferList{
+	border-top: 1px dotted #ddd;
+	margin-top: 30px;
+	padding: 30px 0;
+}
+
+.makeOfferFrm{
+	background-color: #eee;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+.makeOfferFrm *{
+	vertical-align: middle;
+}
+
+.makeOfferFrm em#cap{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.makeOfferFrm label{
+	background-color: #fff;
+	/*border-bottom: 1px dotted #ddd;*/
+	display: block;
+	margin: 3px 0;
+	padding: 0 10px;
+}
+
+.makeOfferFrm label:hover{
+	background-color: #f5f5f5;
+}
+
+.makeOfferFrm label article{
+	display: inline-block;
+}
+
+.makeOfferFrm label h3{
+	display: inline;
+}
+
+.makeOfferFrm label span{
+	display: inline;
+	vertical-align: top;
+}
+
+.makeOfferFrm label .pic-holder{
+	border-radius: 2px;
+	margin-right: 5px;
+	height: 40px;
+	width: 30px;
+
+	background-color: #eee
+}
+
+.makeOfferFrm textarea{
+	border: none;
+	margin-top: 10px;
+}
+
+.makeOfferFrm button{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.myOfferList .offer-pics{
+	border-radius: 4px;
+	padding: 0;
+	height: 60px !important;
+	width: 60px !important;
+}
+
+
+
+
+/* edit trader profile */
+form.edit-profile{}
+
+form.edit-profile [type="text"],
+form.edit-profile [type="password"]{
+	display: block;
+	width: 93%;
+}
+
+
+
+
+/* feedback form */
+.feedback-ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.feedback-ul li{
+	display: block;
+	min-width: 240px;
+	width: 100%;
+}
+
+.feedback-ul li:nth-child(2n){
+	border-top: 1px solid #ddd;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.feedback-ul li form *{
+	margin-bottom: 10px;
+}
+
+.feedback-ul li .fa{
+	color: #ccc;
+}
+
+.feedback-ul li #div{
+	margin-bottom: 10px;
+}
+
+.feedback-ul li h2{
+	margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 600px){
+	.feedback-ul li{
+		display: inline-block;
+		min-width: 240px;
+		width: 21%;
+		vertical-align: top;
+	}
+
+	.feedback-ul li:nth-child(2n){
+		border-top: none;
+		border-left: 1px solid #ddd;
+		margin-top: 0;
+		margin-left: 3%;
+		padding-top: 0;
+		padding-left: 3%;
+		width: 72%;
+	}
+}

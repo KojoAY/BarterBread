@@ -1,0 +1,151 @@
+jQuery(function($){
+
+	// FitVids
+	$('.entry-content, .featured-video').fitVids({ customSelector: "iframe[src^='http://www.funnyordie.com']"});
+
+	// Ad Disclosure 
+	$('.ad-disclosure .message').hide();
+	$('.ad-disclosure .links').show();
+	$('.ad-disclosure').show();
+	$('.ad-disclosure .links a').click(function(e){
+		$('.ad-disclosure .links a').toggleClass('hidden');
+		$('.ad-disclosure .message').slideToggle();
+		e.preventDefault();
+	});
+	
+	// Review Header and Footer
+	$('.review-header > div').matchHeight();
+	$('.review-footer > div' ).matchHeight();
+	
+	// Blog, display "Continue Reading" on new line
+	$('.blog-archive .entry-content p:nth-last-child(2)').before('<div class="clearfix"></div>' );
+	
+	// Two Column Submenu
+	$('.genesis-nav-menu .two-column .sub-menu').each(function(){
+		$(this).prepend('<div class="left"></div><div class="right"></div>' );
+		$(this).find('li').prependTo( $(this).find('.left') );
+		$(this).find('.left .break').nextAll().prependTo( $(this).find('.right') );
+		$(this).find('.left .break').prependTo( $(this).find('.right') );
+	});
+	
+	// Topics Submenu
+	$('.genesis-nav-menu .topics-submenu').removeClass('topics-submenu').addClass('sub-menu').appendTo('.genesis-nav-menu .menu-item.topics');
+	$('.genesis-nav-menu .menu-item.topics .sub-menu > div').matchHeight();
+	$('.genesis-nav-menu .cat-listing > ul > li').hover(function(){
+		$('.genesis-nav-menu .cat-listing li.subnav-active').removeClass('subnav-active');
+		$(this).addClass('subnav-active');
+	});
+	
+	// Menu Search
+	$('.genesis-nav-menu .menu-item.search > a').click(function(e){
+		$(this).parent().toggleClass('active');
+		$(this).parent().find('input[type="search"]').focus();
+		e.preventDefault();
+	});
+	
+	// Fixed Menu
+	$('.nav-primary').after( '<div class="bumper"></div>' );
+	$(window).scroll(function(){
+		if( $(document).scrollTop() > 100 ) {
+			$('body').addClass('fixed-header');
+		} else {
+			$('body').removeClass('fixed-header');
+		}
+	});
+	
+	// Mobile Menu
+	// -- Mobile Menu Open
+	$('.mobile-toggle i').click(function(){
+		$('.mobile-toggle i').toggleClass('hidden');
+		$('.mobile-menu').toggleClass('active');
+	});
+	
+	// -- Mobile Submenu Open
+	$('.mobile-menu .menu-item-has-children > a').click(function(e){
+		$(this).siblings().addClass('active');
+		$('.mobile-menu > ul').animate({
+			left: '-100%',
+		}, 500, function(){});
+		e.preventDefault();
+	});
+	
+	// -- Mobile Submenu Close
+	$('.mobile-menu .sub-menu').prepend( '<li class="menu-item back"><a href="#">Back</a></li>' );
+	$('.mobile-menu .sub-menu .back > a').click(function(e){
+		$('.mobile-menu > ul').animate({
+			left: '0',
+		}, 500, function(){
+			$('.mobile-menu .sub-menu.active').removeClass('active');
+		});		
+		e.preventDefault();
+	});
+	
+	// -- Mobile Social
+	$('.mobile-social').appendTo('.mobile-menu').show();
+	
+	// Floating Sharing Buttons
+	var articleScrollHandling = {
+	    allow: true,
+	    reallow: function() {
+	        articleScrollHandling.allow = true;
+	    },
+	    delay: 50 //(milliseconds) adjust to the highest acceptable value
+	};
+
+	$(window).scroll(function(){
+		if( articleScrollHandling.allow ) {
+		
+			articleScrollHandling.allow = false;
+			setTimeout(articleScrollHandling.reallow, articleScrollHandling.delay);
+
+			if ( $('body').hasClass('single-post') ) {
+				
+				
+				var social = $('.left-sharing');
+				var screen = $('.site-container');
+				var offset;
+				var articleOffset;
+				
+				offset = $(social).offset().top - $(window).scrollTop();
+				articleBottom = $('.more-from-mc').offset().top - $(window).scrollTop();
+				articleTop = $('h1.entry-title').offset().top - $(window).scrollTop();
+				if( offset < 100 ) {
+					$(social).addClass('fixed');
+				}
+				if( articleTop > -100 || articleBottom < 550 ) {
+					$(social).removeClass('fixed');
+				}
+	
+			}
+
+			be_determine_sidebar_position();
+		}
+	});	
+	
+	// Fixed Last Widget
+	$('.sidebar-primary .widget:last-child').addClass('last-widget');
+	function be_determine_sidebar_position(){
+		headerCorrection = 100;
+		windowScroll     = $(window).scrollTop() + 130;
+		sidebarHeight    = $('.sidebar-primary').height();
+		windowWidth      = $('.site-container').width();
+		bottom           = $('.more-from-mc').offset().top - windowScroll;
+
+		if ( windowScroll >= ( sidebarHeight + headerCorrection ) && windowWidth > 767 && bottom > 350 ) {
+			$('.sidebar-primary').css('min-height', $('.sidebar-primary').height() + 'px' );
+			$('.last-widget').addClass('fixed');
+			$('.last-widget').css('top', headerCorrection);
+		} else {
+			$('.last-widget').removeClass('fixed');
+			$('.last-widget').css('top', 'auto');
+		}
+	}
+	
+});
+
+
+// Twitter
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+
+// ShareThis
+stLight.options({publisher: "25ce3796-0f6f-43b9-a36c-78c2238b9f95", doNotHash: true, doNotCopy: true, hashAddressBar: false});

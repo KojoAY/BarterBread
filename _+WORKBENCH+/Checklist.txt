@@ -1,0 +1,44 @@
+DESIGN
+============
+Register
+Login/Logout
+Trader Profile
+Manage Reviews
+List Offer
+Offer List
+	Offer Details
+	Make Offer
+	Suggest Offer
+	Share Offer Details
+My Offers
+	Offer List
+	Offer Details
+	[List Offers with 2 notifications (in offers/suggestions, out offers/suggestions)]
+Messages/Inbox/Interest in Item
+User/Trader Review
+Watchlist
+	List Details
+
+
+
+
+PROGRAMMING
+============
+Register
+Login/Logout
+Trader Profile
+Manage Reviews
+List Offer
+Offer List
+	Offer Details
+	Make Offer
+	Suggest Offer
+	Share Offer Details
+My Offers
+	Offer List
+	Offer Details
+	[List Offers with 2 notifications (in offers/suggestions, out offers/suggestions)]
+Messages/Inbox/Interest in Item
+User/Trader Review
+Watchlist
+	List Details

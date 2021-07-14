@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://medium.com/media/100a87fad64dd33a844920614c33643b -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Laravel default error page (2/2) – Medium</title><meta name="description" content="Laravel default error page (2/2)"><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./056413c784d59774b68fa8b75d741b16.js.download" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css"><div id="gist85572780" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-handler-php" class="file">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-php ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-handler-php-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-handler-php-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-handler-php-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-handler-php-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-c"><span class="pl-c">/**</span></span></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-handler-php-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-c"> * Render the given HttpException.</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-handler-php-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-c"> *</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-handler-php-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-c"> * <span class="pl-k">@param</span>  \Symfony\Component\HttpKernel\Exception\HttpException  $e</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-handler-php-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-c"> * <span class="pl-k">@return</span> \Symfony\Component\HttpFoundation\Response</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-handler-php-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-c"> <span class="pl-c">*/</span></span></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-handler-php-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"><span class="pl-k">protected</span> <span class="pl-k">function</span> <span class="pl-en">renderHttpException</span>(<span class="pl-c1">HttpException</span> <span class="pl-smi">$e</span>)</span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-handler-php-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">{</span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-handler-php-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    <span class="pl-k">if</span> (<span class="pl-k">!</span> view()<span class="pl-k">-&gt;</span>exists(<span class="pl-s"><span class="pl-pds">"</span>errors.{<span class="pl-smi">$e</span><span class="pl-k">-&gt;</span>getStatusCode()}<span class="pl-pds">"</span></span>)) {</span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-handler-php-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">        <span class="pl-k">return</span> response()<span class="pl-k">-&gt;</span>view(<span class="pl-s"><span class="pl-pds">'</span>errors.default<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>exception<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-smi">$e</span>], <span class="pl-c1">500</span>, <span class="pl-smi">$e</span><span class="pl-k">-&gt;</span>getHeaders());</span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-handler-php-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    }</span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-handler-php-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-s1"></span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-handler-php-LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">    <span class="pl-k">return</span> <span class="pl-k">parent</span><span class="pl-k">::</span>renderHttpException(<span class="pl-smi">$e</span>);</span></td>
+      </tr>
+      <tr>
+        <td id="file-handler-php-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-handler-php-LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">}</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/nesk/056413c784d59774b68fa8b75d741b16/raw/f66d42a1dbbc74cf3e517c5e42e79061b27d261f/Handler.php" style="float:right">view raw</a>
+        <a href="https://gist.github.com/nesk/056413c784d59774b68fa8b75d741b16#file-handler-php">Handler.php</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>

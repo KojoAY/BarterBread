@@ -1,0 +1,1178 @@
+﻿html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%; /* needed for container min-height */
+	background-color: #d9d9d9;
+	
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 19px;
+	
+	color: #000000;
+}
+
+span.hit
+{
+	background-color: Yellow;
+}
+
+
+.fb_button_text
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+
+#divClose
+{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 3px;
+	right: 3px;
+	
+	}
+
+
+
+#ctl00_BodyPlaceHolder_ctrlFbShareButton_sharebuttonspan .FBConnectButton_Text
+{
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+
+
+a:link, a:visited, a:active
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: none;
+}
+
+
+a.HeaderLogOutLink:link, a.HeaderLogOutLink:visited, a.HeaderLogOutLink:active
+{
+	font-size: 12px;
+	line-height: 15px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+}
+
+a.HeaderLogOutLink:hover
+{
+	font-size: 12px;
+	line-height: 15px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: none;
+}
+
+.FbConnectHelp
+{
+	font-size: 10px;
+	line-height: 11px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+	
+	}
+
+a.FbConnectHelp:link, a.FbConnectHelp:visited, a.FbConnectHelp:active
+{
+	font-size: 10px;
+	line-height: 11px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+}
+
+a.FbConnectHelp:hover
+{
+	font-size: 10px;
+	line-height: 11px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: none;
+}
+
+h1
+{
+	color: green;
+	font-size: 24px;
+	line-height: 30px;
+	display: inline;
+}
+
+h2
+{
+	color: #11539D;
+	font-size: 18px;
+	line-height: 26px;
+	display: inline;
+}
+
+
+
+.GreySmall
+{
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 15px;
+	color: #666666;
+}
+
+.Orange
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 19px;
+	color: #f79d00;
+}
+
+.OrangeMedium
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #f79d00;
+}
+
+.OrangeLarge
+{
+	font-family: Arial;
+	font-size: 19px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #f79d00;
+}
+
+
+
+
+
+.Green
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 19px;
+	color: green;
+}
+
+a.Green:link, a.Green:visited, a.Green:active
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+}
+
+a.Green:hover
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: none;
+}
+
+
+.GreenMedium
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: green;
+}
+
+
+a.GreenMedium:link, a.GreenMedium:visited, a.GreenMedium:active
+{
+	font-size: 16px;
+	line-height: 21px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+}
+
+a.GreenMedium:hover
+{
+	font-size: 16px;
+	line-height: 21px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: none;
+}
+
+
+
+
+.Blue
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 19px;
+	color: #11539D;
+}
+
+a.Blue:link, a.Blue:visited, a.Blue:active
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: underline;
+}
+
+a.Blue:hover
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: green;
+	text-decoration: none;
+}
+
+
+.BlueMedium
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #11539D;
+}
+
+a.BlueMedium:link, a.BlueMedium:visited, a.BlueMedium:active
+{
+	font-size: 16px;
+	line-height: 21px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: underline;
+}
+
+a.BlueMedium:hover
+{
+	font-size: 16px;
+	line-height: 21px;
+	font-family: arial;
+	color: green;
+	text-decoration: none;
+}
+
+a.BlueLarge:link, a.BlueLarge:visited, a.BlueLarge:active
+{
+	font-size: 19px;
+	line-height: 24px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: underline;
+}
+
+a.BlueLarge:hover
+{
+	font-size: 19px;
+	line-height: 24px;
+	font-family: arial;
+	color: green;
+	text-decoration: none;
+}
+
+.Red
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 19px;
+	color: #cc0000;
+}
+
+a.Red:link, a.Red:visited, a.Red:active
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: #cc0000;
+	text-decoration: underline;
+}
+
+a.Red:hover
+{
+	font-size: 14px;
+	line-height: 19px;
+	font-family: arial;
+	color: #666;
+	text-decoration: none;
+}
+
+.RedMedium
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #cc0000;
+}
+
+
+.White
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 19px;
+	color: #fff;
+}
+
+
+
+a.SwapLinkGreen:link, a.SwapLinkGreen:visited, a.SwapLinkGreen:active
+{
+	font-size: 14px;
+	line-height: 18px;
+	font-family: arial;
+	color: green;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+a.SwapLinkGreen:hover
+{
+	font-size: 14px;
+	line-height: 18px;
+	font-family: arial;
+	color: green;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+
+a.SwapLinkBlue:link, a.SwapLinkBlue:visited, a.SwapLinkBlue:active
+{
+	font-size: 14px;
+	line-height: 18px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+a.SwapLinkBlue:hover
+{
+	font-size: 14px;
+	line-height: 18px;
+	font-family: arial;
+	color: #11539D;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+
+
+.SwapSummaryLabel
+{
+	float: left; 
+	width: 97px;	
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #666;
+	
+}
+
+
+.Subtitle
+{
+	width: 100%;
+	border-bottom: solid 1px #ccc;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 24px;
+	color: green;
+	padding: 0;
+	margin: 0 0 15px 0;
+}
+
+.FooterText
+{
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 17px;
+	color: #fff;
+}
+
+
+
+a.FooterText:link, a.FooterText:visited, a.FooterText:active
+{
+	font-size: 12px;
+	line-height: 17px;
+	font-family: arial;
+	color: #fff;
+	text-decoration: underline;
+}
+
+a.FooterText:hover
+{
+	font-size: 12px;
+	line-height: 17px;
+	font-family: arial;
+	color: #f79d00;
+	text-decoration: none;
+}
+
+
+
+.PostDetailsMemberInfo
+{
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+}
+
+
+.ViewResponseEmailBody
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.Contacts
+{
+	background-image: url('../images/ActionIconSprite.gif');
+	background-position: 5px -366px;
+	background-repeat: no-repeat;
+	padding: 12px 0 4px 43px;
+}
+
+.Edit
+{
+	background-image: url('../images/ActionIconSprite.gif');
+	background-position: 5px 0px;
+	background-repeat: no-repeat;
+	padding: 8px 0 8px 42px;
+}
+
+.Lock
+{
+	background-image: url('../images/IconSprite.gif');
+	background-position: left -450px;
+	background-repeat: no-repeat;
+	padding: 8px 0 8px 42px;
+}
+
+.ReturnLink
+{
+	background-image: url('../images/IconSprite.gif');
+	background-position: left -297px;
+	background-repeat: no-repeat;
+	padding: 10px 0 5px 37px;
+}
+
+.Delete
+{
+	background-image: url('../images/IconSprite.gif');
+	background-position: left -334px;
+	background-repeat: no-repeat;
+	padding: 10px 0 5px 44px;
+}
+
+.ReportSpam
+{
+	background-image: url('../images/IconSprite.gif');
+	background-position: left -371px;
+	background-repeat: no-repeat;
+	padding: 10px 0 5px 37px;
+}
+
+.SpeechPoint
+{
+	position: absolute;
+	top: 8px;
+	left: -20px;
+	width: 20px;
+	height: 20px;
+	background: url('../images/SpeechPoint.png') no-repeat 0 0;
+}
+
+
+
+
+
+.FormHelpText
+{
+	color: #999999;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+
+a.Medium:link, a.Medium:visited, a.Medium:active
+{
+	font-size: 18px;
+	line-height: 24px;
+	font-family: arial;
+	color: #000066;
+	text-decoration: underline;
+}
+
+a.Medium:hover
+{
+	font-size: 18px;
+	line-height: 24px;
+	font-family: arial;
+	color: #660000;
+	text-decoration: none;
+}
+
+a.Large:link, a.Large:visited, a.Large:active
+{
+	font-size: 22px;
+	line-height: 27px;
+	font-family: arial;
+	color: #000066;
+	text-decoration: underline;
+}
+
+a.Large:hover
+{
+	font-size: 22px;
+	line-height: 27px;
+	font-family: arial;
+	color: #660000;
+	text-decoration: none;
+}
+
+/* Font Styles */
+
+
+.Small
+{
+	font-size: 11px;
+	line-height: 14px;
+	font-family: arial;
+	color: #555555;
+	text-decoration: none;
+}
+
+
+
+.Sup
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 19px;
+	color: #26488d;
+	font-weight: bold;
+}
+
+.Title
+{
+	width: 940px;
+	border-bottom: solid 1px #ccc;
+	font-family: Arial;
+	font-size: 24px;
+	line-height: 34px;
+	color: #f79d00;
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+
+.PostDetailTitle
+{
+	width: 700px;
+	border-bottom: solid 1px #ccc;
+	font-family: Arial;
+	font-size: 22px;
+	line-height: 30px;
+	color: green;
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+
+
+
+
+
+
+.BoxTitles
+{
+	clear: both;
+	width: 100%;
+	border-bottom: solid 1px #ccc;
+	font-family: Arial;
+	font-size: 17px;
+	line-height: 24px;
+	color: #11539D;
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+.BoxTitlesLarge
+{
+	clear: both;
+	width: 100%;
+	border-bottom: solid 1px #ccc;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 26px;
+	color: #11539D;
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+
+.Heading
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	color: #5c5b5b;
+	font-weight: bold;
+}
+
+
+.RebateEstimateCurrency
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	color: green;
+	font-weight: bold;
+}
+
+
+
+
+a.CompanyName:link, a.CompanyName:visited, a.CompanyName:active
+{
+	font-size: 15px;
+	line-height: 19px;
+	font-family: arial;
+	color: #26488d;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a.CompanyName:hover
+{
+	font-size: 15px;
+	line-height: 19px;
+	font-family: arial;
+	color: #26488d;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+.CompanyTaskHeader
+{
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 21px;
+	color: #1d1d1d;
+	font-weight: bold;
+}
+
+.CompanyTaskSubHeader
+{
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 17px;
+	color: #26488d;
+	font-weight: bold;
+}
+
+.FormLabel
+{
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #26488d;
+	font-weight: normal;
+}
+
+.FormFilterLabels
+{
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 18px;
+	color: green;
+	font-weight: bold;
+}
+
+
+
+.FormText
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+
+
+
+
+.FormCreateAccount
+{
+	width: 300px;
+	height: 25px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.FormLarge
+{
+	width: 500px;
+	height: 25px;
+	font-size: 20px;
+	line-height: 24px;
+	color: #666;
+}
+
+
+
+.FormAddPosting
+{
+	width: 500px;
+	height: 25px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.labelHighlight
+{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #999;
+}
+
+
+
+.FormTextAreaAddPosting
+{
+	width: 500px;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+}
+
+
+.FormFilter
+{
+	width: 250px;
+	height: 21px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+
+
+
+.FormSectionHeader
+{
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+	color: green;
+	font-weight: normal;
+}
+
+
+/* Design Elements */
+
+.GreyBox
+{
+	background-color: #f5f5f5;
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+
+.HelpBox
+{
+	float: right;
+	width: 268px;
+	height: auto;
+	background-color: #eef8fd;
+	border: solid 1px #ccc;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 17px;
+}
+.HelpBoxHeader
+{
+	float: right;
+	width: 278px;
+	height: auto;
+	background-color: #254487;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+	padding: 5px;
+	font-size: 15px;
+	line-height: 17px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
+.FormWrapper
+{
+	background-color: #f5f5f5;
+	border: solid 1px #ccc;
+	padding: 10px;
+	height: auto;
+	width: auto;
+}
+
+.WizardNavBox
+{
+	float: left;
+	background-color: #f9f9f9;
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+.SetupQuestionNumber
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 19px;
+	color: #26488d;
+	font-weight: bold;
+	float: left;
+	width: 10px;
+	padding-right: 5px;
+}
+
+.SetupQuestionText
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 19px;
+	color: #26488d;
+	font-weight: bold;
+	float: left;
+	width: 540px;
+	padding-right: 15px;
+}
+
+
+.GreyLine
+{
+	clear: both;
+	border-bottom: solid 1px #ccc;
+	height: 1px;
+	width: 100%;
+}
+
+/* Layout Containers */
+
+.RadioButtonList input
+{
+	float: left;
+}
+
+.RadioButtonList label
+{
+	margin-left: 25px;
+	display: block;
+}
+
+
+div#container
+{
+	position: relative; /* needed for footer positioning*/
+	margin: 0 auto; /* center, not in IE5 */
+	padding: 0;
+	width: 980px;
+	height: auto !important; /* real browsers */
+	height: 100%; /* IE6: treaded as min-height*/
+	min-height: 100%; /* real browsers */
+	background: #ffffff;
+}
+
+div#footer
+{
+	clear: both;
+	width: 960px;
+	height: 60px;
+	background: #274a90 url('../images/FooterBg.gif') repeat-x 0 0;
+	padding: 10px;
+	margin: 0 auto;
+	text-align:center;
+}
+
+div#HeaderWrapper
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background: url('../images/BgHeader.jpg') repeat-x 0 0;
+}
+
+div#HeaderContents
+{
+	position: relative;
+	width: 980px;
+	height: 100px;
+	padding: 0;
+	list-style: none;
+	margin: 0 auto;
+	clear: both;
+}
+
+div#ContentWrapper
+{
+	clear: both;
+	width: 940px;
+	height: auto;
+	min-height: 500px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	text-align: left;
+	padding: 10px 20px 20px 20px;
+	border: none;
+}
+
+div#CompanySubNavWrapper
+{
+	width: 980px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	text-align: left;
+	padding: 150px 0px 20px 0px;
+}
+
+div#CompanyContentWrapper
+{
+	width: 940px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	text-align: left;
+	padding: 0px 20px 20px 20px;
+}
+
+
+
+div#DividerBar
+{
+	clear: both;
+	width: 100%;
+	height: 10px;
+	background: #999999 url('../images/BgDividerBar.gif') 0 0 repeat-x;
+}
+
+div#ReturnToCompanyOverview
+{
+	position: absolute;
+	top: 150px;
+	left: 750px;
+	z-index: 10;
+	font-weight: bold;
+}
+
+
+#FbLoginHeaderWrapper
+{
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	border: solid 1px #11539D;
+	background-color: #fbfbfb;
+	width: auto;
+	height: auto;
+	padding: 7px;
+}
+
+/* contact form styles */
+
+div.BlueBarBG
+{
+	float: left;
+	height: 25px;
+	padding: 0;
+	list-style: none;
+	background-image: url('../images/bg-bar-3d.gif' );
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	padding-top: 5px;
+}
+div.BlueBarLeftBG
+{
+	background: url('../images/bg-bar-3d-end.gif' ) 0px 0px no-repeat;
+	background-position: left;
+	height: 25px;
+	float: left;
+	width: 10px;
+	padding-top: 5px;
+}
+div.BlueBarRightBG
+{
+	background: url('../images/bg-bar-3d-end.gif' ) -10px 0 no-repeat;
+	background-position: right;
+	height: 25px;
+	float: left;
+	width: 10px;
+	padding-top: 5px;
+}
+
+
+
+/* Primary Navigation */
+
+
+
+#NavBar
+{
+	width: 100%;
+	height: 33px;
+	background: #f5f5f5 url(   '../images/BgNav.jpg' ) repeat-x 0 0;
+	border: none;
+}
+
+#NavButtonWrapper
+{
+	width: 980px;
+	height: 33px;
+	margin: 0 auto;
+	padding: 0;
+	background: #f5f5f5 url(   '../images/BgNav.jpg' ) repeat-x 0 0;
+	border: none;
+}
+
+
+
+#nav
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+	background: url('../images/BgNav.jpg' ) 0 0 repeat-x;
+	float: left;
+	width: 960px;
+	float: left;
+}
+
+#nav li
+{
+	display: inline;
+	padding: 0 0 0 0;
+	margin: 0;
+	text-align: center;
+}
+#nav a:link, #nav a:visited
+{
+	color: #f5f5f5;
+	font-size: 13px;
+	background: url('../images/BgNav.jpg' ) 0 0 repeat-x;
+	padding: 6px 15px 10px 15px;
+	margin: 0;
+	float: left;
+	width: auto;
+	border-right: 1px solid #ffffff;
+	height: 17px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#nav a:hover
+{
+	color: #ffffff;
+	background: url('../images/BgNavOver.jpg' ) 0 0 repeat-x;
+	text-decoration: none;
+}
+
+#nav li:first-child a
+{
+	border-left: 1px solid #ffffff;
+}
+
+#nav li:first-child + li + li + li + li + li + li + li a
+{
+	border-right: 1px solid #cccccc;
+}
+
+
+.modalBackground
+{
+
+  background-color:#CCCCFF;
+  filter:alpha(opacity=40);
+  opacity:0.5;
+
+}
+
+a.fb-button {
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a.fb-button:hover {
+ 
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    padding: 0px 5px 0px 30px;
+    text-align: left;
+}
+
+.fb-button {
+    background: #5F78AB;
+    background-image: url('../images/FbButtonSprite.png');  
+    background-repeat: no-repeat;
+    background-position: -1px -81px;
+    border-top: 1px solid #29447E;
+    border-right: 1px solid #29447E;
+    border-bottom: 1px solid #1A356E;
+    border-left: 1px solid #29447E;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8A9CC2;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8A9CC2;
+    cursor: pointer;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    padding: 0px 5px 0px 30px;
+    text-align: left;
+}
+

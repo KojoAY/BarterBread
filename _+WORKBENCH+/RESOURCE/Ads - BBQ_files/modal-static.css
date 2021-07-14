@@ -1,0 +1,157 @@
+@import url(../debug.css);
+
+form.pwebcontact_form, form.pwebcontact_form div {
+    margin: 0;
+}
+.pwebcontact_toggler.modal.modal-static {
+	position: relative;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 auto;
+	padding: 10px 30px 10px 10px;
+	margin: 0;
+	text-align: left;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.pwebcontact_toggler.modal.modal-static .icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	background: url('../../images/icons/green-plus-red-cross.png') no-repeat;
+}
+.pwebcontact_toggler.active.modal.modal-static .icon {
+	background-position: 0 -20px;
+}
+
+.pwebcontact_modal {
+	height: 100%;
+}
+form.pwebcontact_form.modal.modal-static {
+	min-height: 100%;
+	padding: 0 10px 0 200px !important; /* 200px width for background image */
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_msg {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	font-family: "Arial Narrow", Arial;
+	margin: 0;
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_msg img {
+	vertical-align: middle;
+}
+
+form.pwebcontact_form.modal.modal-static .pwebcontact_pretext {
+	padding: 0 0 10px;
+	line-height: 130%;
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_fields {
+	width: 360px; /* 100px width of labels + 250px width of fields + 10px */
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_field {
+	padding: 2px 0;
+}
+form.pwebcontact_form.modal.modal-static label {
+	float: left;
+	width: 100px; /* 100px width of labels */
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: left;
+}
+form.pwebcontact_form.modal.modal-static label.inline {
+	display: block;
+	float: none;
+	width: auto;
+}
+form.pwebcontact_form.modal.modal-static label.rokchecks, form.pwebcontact_form.modal.modal-static label.rokradios {
+	padding-left: 22px !important;
+}
+
+form.pwebcontact_form.modal.modal-static fieldset.pwebcontact_fields_group {
+	display: block;
+	float: left;
+	width: 250px; /* 250px width of fields */
+	border: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+form.pwebcontact_form.modal.modal-static input.inputbox, form.pwebcontact_form.modal.modal-static select.inputbox, form.pwebcontact_form.modal.modal-static textarea.inputbox {
+	float: left;
+	width: 250px; /* 250px width of fields */
+	padding: 1px;
+	margin: 0;
+}
+form.pwebcontact_form.modal.modal-static input.inputbox.pwebcontact_date {
+	width: 228px; /* 250px width of fields - 22px (calendar field margin + calendar icon width) */
+	margin-right: 4px;
+}
+form.pwebcontact_form.modal.modal-static img.calendar {
+	vertical-align: top;
+}
+form.pwebcontact_form.modal.modal-static select.inputbox {
+	width: 254px; /* 250px width of fields + 4px */
+}
+form.pwebcontact_form.modal.modal-static textarea.inputbox {
+	height: 100px;
+	max-width: 250px; /* 250px width of fields */
+	resize: vertical;
+}
+form.pwebcontact_form.modal.modal-static fieldset.radio input, form.pwebcontact_form.modal.modal-static fieldset.checkboxes input {
+    margin-left: 0 !important;
+}
+form.pwebcontact_form.modal.modal-static input.button {
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	padding: 4px 14px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+form.pwebcontact_form.modal.modal-static .pwebcontact_asterisk {
+	font-weight: bold;
+	color: red;
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_buttons {
+	padding: 5px 0 5px 100px; /* 100px width of labels */
+	text-align: left;
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_charsleft {
+	margin-left: 100px; /* 100px width of labels */
+}
+
+form.pwebcontact_form.modal.modal-static input.invalid, form.pwebcontact_form.modal.modal-static select.invalid, form.pwebcontact_form.modal.modal-static textarea.invalid { 
+	border-color: #ff0000 !important;
+}
+form.pwebcontact_form.modal.modal-static label.invalid, form.pwebcontact_form.modal.modal-static label.invalid a, form.pwebcontact_form.modal.modal-static label.invalid-files {
+	color: #ff0000 !important;
+}
+
+form.pwebcontact_form.modal.modal-static .pwebcontact_area {
+	float: left;
+	height: 10px;
+	width: 252px; /* 250px width of fields + 2px */
+	margin-top: 5px;
+	margin-left: 100px; /* 100px width of labels */
+}
+form.pwebcontact_form.modal.modal-static .pwebcontact_knob {
+	height: 10px;
+	width: 20px;
+}
+
+body div.calendar {
+	z-index: 65558;
+}
+.pweb_clear {
+	clear: both; height: 0; width: 0; overflow: hidden; padding: 0;
+}

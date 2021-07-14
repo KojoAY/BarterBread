@@ -1,0 +1,29 @@
+OX_1087635077({
+  "ads":{
+    "chain":1,
+    "medium":"w",
+    "record_tmpl":"http://us-ads.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=1&ph=94ef58655625200a8cfc5b15afcd0b94ad52d590",
+    "oxt": 215.846,
+    "adunits" : [
+      {
+        "auid":"538545755",
+        "chain_timeout":"",
+        "chain":[
+          {
+            "is_fallback":1,
+            "ad_id":"0",
+            "adv_acct_id":"",
+            "width":"300",
+            "height":"250",
+            "html":"<script type=\"text/javascript\" src=\"//static.criteo.net/js/ld/publishertag.js\"></script>\n<div id=\"crt-479867\"></div>\n<script type=\"text/javascript\">\nCriteo.DisplayAd({\n    \"zoneid\": 479867,\n    \"containerid\": \"crt-479867\"});\n</script>",
+            "target":"_blank",
+            "ts":"1fHJpZD1iNjQwZGJmNC00MjNmLTQ5NGMtODU1MS0zOGJmNzNmMzVjMDN8cnQ9MTQ5MjYyNTE3MnxhdWlkPTUzODU0NTc1NXxhdW09RE1JRC5XRUJ8YXVwZj1kaXNwbGF5fHNpZD01MzcyODE0ODB8cHViPTUzNzE0MDI5NHxwYz1VU0R8cmFpZD1jMzZlOWM3Ny01MTdhLTRhZTktODliYS03YWIxZDFmYjIxNDJ8cnM9MXx1cj15MTgxNVFTazJ6",
+            "type":"html",
+            "ad_url":"<script type=\"text/javascript\" src=\"//static.criteo.net/js/ld/publishertag.js\"></script>\n<div id=\"crt-479867\"></div>\n<script type=\"text/javascript\">\nCriteo.DisplayAd({\n    \"zoneid\": 479867,\n    \"containerid\": \"crt-479867\"});\n</script>"
+          }
+        ]
+      }
+    ]
+  }
+});

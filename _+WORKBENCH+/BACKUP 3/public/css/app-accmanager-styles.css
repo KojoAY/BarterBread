@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+/*
+#FF820A
+#F07800
+*/
+
+.accman-menu,
+.accman-content{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.accman-menu{
+	width: 20%;
+	min-width: 200px;
+}
+
+.accman-menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.accman-menu ul li{}
+
+.accman-menu ul li.user-info-sum{
+	min-height: 200px;
+	position: relative;
+}
+
+.accman-menu ul li.user-info-sum .photo{
+	background-color: #eee;
+	border-radius: 4px 4px 0 0;
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	width: 100%;
+}
+
+.accman-menu ul li.user-info-sum h4{
+	background-color: rgba(0,0,0,.7);
+	color: #fff;
+	display: block;
+	padding: 3px 4%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-transform: capitalize;
+	width: 92%;
+}
+
+.accman-menu ul li a{
+	border-bottom: 1px dotted #ddd;
+	color: #000;
+	display: block;
+	padding: 10px 10px;
+	text-transform: capitalize;
+}
+
+.accman-menu ul li a:hover{
+	background-color: #f5f5f5;
+	color: #FF820A;
+}
+
+.accman-menu ul li a i{
+	display: inline-block;
+	width: 18px;
+}
+
+
+
+/* offer list on the accman-menu */
+.accman-menu .menu-items{
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	display: block;
+	padding: 0 0 20px 0;
+}
+
+.accman-menu .menu-items a{
+	border-bottom: 1px solid #eee;
+	display: block;
+	padding: 5px 0px;
+}
+
+.accman-menu .blueBtn{
+	font-size: 18px;
+}
+
+.accman-menu ul.offer-list-sum li{
+	border-bottom: 1px solid #ddd;
+	padding: 5px 0;
+}
+
+.accman-menu ul.offer-list-sum li section{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.accman-menu ul.offer-list-sum li:hover{
+	background-color: #eee;
+}
+
+.accman-menu ul li #item-photo{
+	border-radius: 4px;
+	height: 60px !important;
+	width: 60px !important;
+	padding: 0 !important;
+}
+
+.accman-menu ul.offer-list-sum li .item-desc{
+	position: relative;
+
+	width: 70%;
+}
+
+.accman-menu ul.offer-list-sum li .item-desc .item-title-loc a#item-title{
+	border: none;
+	color: #666;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 0;
+}
+
+.accman-menu ul.offer-list-sum li:hover .item-desc .item-title-loc a#item-title{
+	color: #000;
+}
+
+.accman-menu ul.offer-list-sum li .item-desc .item-title-loc a#item-title:hover{
+	background: none;
+	color: #FF820A;
+}
+
+.accman-menu ul.offer-list-sum li .item-desc .item-title-loc #actVal{
+	position: relative;
+	font-size: 13px;
+	color: #00B8E6;
+}
+
+.accman-menu ul.offer-list-sum li .item-desc .item-title-loc #item-loc{
+	color: #aaa;
+	font-size: 11px;
+	text-transform: capitalize;
+}
+
+.accman-menu ul.offer-list-sum li .offerStat{
+	bottom: 0px;
+}
+
+.accman-menu ul.offer-list-sum li .offerStat a{
+	padding: 0 !important;
+}
+
+
+
+/* content */
+.accman-content{
+	border-left: 1px solid #eee;
+	margin-left: 2%;
+	padding-left: 2%;
+	min-height: 500px;
+	width: 74%;
+}
+
+.fill-page{
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.accman-content article{
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+}
+
+.accman-content article strong{
+	display: inline-block;
+	font-weight: 500;
+	text-transform: capitalize;
+	width: 90px;
+}
+
+
+
+
+/* manage offer list */
+.toRight{
+	float: right;
+}
+
+.toRight a{
+	padding: 5px 15px;
+}
+
+
+
+/* offer status */
+.offerStat{
+	font-size: 10px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.offerStat a{
+	color: #000;
+	background-color: #e5e5e5;
+	border-radius: 0 4px 4px 0;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0px 0 0px 5px;
+	overflow: hidden;
+}
+
+.offerStat a:hover{
+	background-color: #aaa;
+	color: #fff;
+}
+
+.offerStat a:hover span{
+	background-color: #000;
+}
+
+
+.offerStat a span{
+	background-color: #00B8E6;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+
+
+
+.manage-btn{
+	font-size: 12px;
+	padding: 10px 0px 0px 0px !important;
+}
+
+
+
+/* my offer details */
+.accman-content .myOfferDetails{
+	border-bottom: 1px dotted #ddd;
+	display: block;
+	margin-top: 25px;
+}
+
+.accman-content .wantedOfferList{
+	display: block;
+}
+
+.accman-content .wantedOfferList .wantedHolder{
+	border-bottom: 1px dotted #ddd;
+	display: block;
+	padding: 20px 0;
+}
+
+.accman-content .myOfferDetails section,
+.accman-content .wantedOfferList section{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.accman-content .myOfferDetails article,
+.accman-content .wantedOfferList article{
+	border: none;
+	padding: 0;
+}
+
+.accman-content .myOfferDetails section.photo,
+.accman-content .wantedOfferList section.photo{
+	margin-right: 2%;
+	text-align: center;
+	width: auto;
+}
+
+.accman-content .myOfferDetails section.photo #item-photo,
+.accman-content .wantedOfferList section.photo #item-photo,
+.accman-menu ul li #item-photo{
+	background: #eee center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	overflow: hidden;
+	text-align: center;
+	padding: 0 !important;
+	height: 100px;
+	width: 100px;
+}
+
+.accman-content .wantedOfferList section.photo #item-photo{
+	padding: 0 !important;
+	height: 80px;
+	width: 80px;
+}
+
+
+.accman-content .myOfferDetails section.item-desc{
+	width: 80%;
+}
+
+.accman-content .wantedOfferList section.item-desc{
+	width: 84%;
+}
+
+.accman-content .myOfferDetails section.item-desc h1{
+	font-size: 15px;
+}
+
+.accman-content .wantedOfferList section.item-desc h1{
+	font-size: inherit;
+}
+
+.accman-content .wantedOfferList section.item-desc h3{
+	color: #aaa;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.accman-content .myOfferDetails section.item-desc .item-title-loc,
+.accman-content .wantedOfferList section.item-desc .item-title-loc{
+	min-height: 70px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+.accman-content .myOfferDetails section.item-desc .item-title-loc #item-title,
+.accman-content .wantedOfferList section.item-desc .item-title-loc #item-title{
+	color: #000;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+
+.accman-content .myOfferDetails section.item-desc .item-title-loc #item-title:hover,
+.accman-content .wantedOfferList section.item-desc .item-title-loc #item-title:hover{
+	color: #FF820A;
+}
+
+.accman-content .myOfferDetails section.item-desc .item-title-loc #item-loc,
+.accman-content .wantedOfferList section.item-desc .item-title-loc #item-loc{
+	color: #aaa;
+	font-size: 11px;
+}
+
+.accman-content .myOfferDetails section.item-desc .item-title-loc #item-loc #actVal,
+.accman-content .wantedOfferList section.item-desc .item-title-loc #actVal{
+	position: relative;
+	font-size: 13px;
+	color: #00B8E6;
+}
+
+.accman-content .wantedOfferList section.item-desc .item-title-loc .offerDesc{}
+
+.accman-content .myOfferDetails .item-wanted{
+	background-color: #eee;
+	border-radius: 2px;
+	margin: 15px 0 3px 0;
+	padding: 0 0 2px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.accman-content .myOfferDetails .item-wanted strong{
+	clear: both;
+	color: #888;
+	display: block;
+	font-size: 10px;
+	font-weight: 500;
+	margin-top: 5px;
+	padding-top: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.item-wanted strong{
+	font-size: 12px;
+}
+
+.accman-content .myOfferDetails .item-wanted span{
+	background-color: #fff;
+	/*border: 1px solid #ddd;*/
+	border-radius: 3px;
+	box-shadow: 0 0 5px -3px #000;
+	display: block;
+	font-size: 12px;
+	margin: 3px 4px;
+	padding: 4px 5px;
+	position: relative;
+	overflow: ;
+	text-align: left;
+	vertical-align: top;
+	height: 20px;
+	width: auto;
+}
+
+.item-wanted span{
+	font-size: inherit;
+}
+
+.item-wanted span.no-opt{
+	color: #aaa;
+	font-size: 10px !important;
+	text-align: center !important;
+}
+
+.accman-content .myOfferDetails .item-wanted span em{
+	background-color: #FF820A;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 12px;
+	font-style: normal;
+	padding: 1px 2px;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 18px;
+	z-index: 999999999;
+}
+
+
+
+
+/*  */
+.accman-content .wantedOfferList{
+	margin-top: 50px;
+}

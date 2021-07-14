@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.daddydesign.com/facebookshare/button1.php -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <title>Daddy Design - Custom Facebook Share Button With Custom Counter - Demo</title>
+    
+    <style type="text/css">
+    	/*** GENERAL ***/
+   		* { margin:0; padding:0; }
+		html, body { height: 100%; }
+		body { background: #fff; overflow: hidden; text-align: center; }
+		img { border: 0; outline: none; }
+		
+		/*** CONTAINER ***/
+		.button1 { float: left; margin: 0 0 20px 0; width: 400px; }
+
+		/***BUTTON***/
+		.button1 a#button {
+			/* For WebKit (Safari, Google Chrome etc) */
+			background: -webkit-gradient(linear, left top, left bottom, from(#ffab00), to(#e05d05));
+			/* For Mozilla/Gecko (Firefox etc) */
+			background: -moz-linear-gradient(top, #ffab00, #e05d05);
+			/* For Internet Explorer 5.5 - 7 */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffab00, endColorstr=#e05d05);
+			/* For Internet Explorer 8 */
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffab00, endColorstr=#e05d05)";
+			background-color: #e05d05;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			behavior: url("../border-radius.htc");
+			color: #fff;
+			display: block;
+			float: left;
+			font: bold 22px/22px Helvetica, Arial, sans-serif;
+			margin: 0px;
+			padding: 10px;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 250px;
+		}
+			.button1 a:hover#button { background: #ffab00; }
+			
+		/*** FB COUNTER ***/
+		.button1 .counter {	
+			background: url("images/fb_counter.gif") no-repeat left center transparent;
+			float: left;
+			margin: 0 0 0 10px;
+			max-height: 40px;
+			max-width: 100px;
+			min-width: 50px;
+			padding: 0 0 0 5px;
+		}
+		.button1 .counter #fbcount { 
+			border-top: 1px solid #eee; 
+			border-right: 1px solid #eee; 
+			border-bottom: 1px solid #eee; 
+			border-left: 0px solid #eee; 
+			color: #ff6600; 
+			font: bold 14px/18px Helvetica, Arial, sans-serif; 
+			height: 14px;
+			max-width: 100px;
+			overflow: hidden;
+			padding: 12px 10px;
+			text-align: center;
+		}
+	</style>
+    
+    <!--<base target="_blank">--><base href="." target="_blank">
+
+</head>
+
+<body>
+	
+			<div class="button1">
+	                	        <a id="button" onclick="window.open(&#39;http://www.facebook.com/sharer.php?s=100&amp;p[title]=How+to+Create+a+Custom+Facebook+Share+Button+with+a+Custom+Counter&amp;p[summary]=Learn+how+to+create+a+custom+Facebook+%27Share%27+button%2C+complete+with+a+custom+counter%2C+for+your+website%21&amp;p[url]=http%3A%2F%2Fwww.daddydesign.com%2Fwordpress%2Fhow-to-create-a-custom-facebook-share-button-with-a-custom-counter%2F&amp;&amp;p[images][0]=http%3A%2F%2Fwww.daddydesign.com%2FClientsTemp%2FTutorials%2Fcustom-iframe-share-button%2Fimages%2Fthumbnail.jpg&#39;, &#39;sharer&#39;, &#39;toolbar=0,status=0,width=550,height=400&#39;);" target="_parent" href="javascript: void(0)">
+        	    	Click to Share 
+            	</a>  
+	            <div class="counter">
+    	        	<div id="fbcount">0</div>
+        		</div>
+        	</div>
+        	
+        	
+    <div id="fb-root"></div>
+    <script src="./all.js.download"></script>
+
+
+
+</body></html>
