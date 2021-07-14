@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["+ViJf"]); }
-
-__d("ServicesAppointmentReferrerSurface",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({MESSAGE:"message",NEWSFEED:"newsfeed",PAGE:"page",SEARCH:"search"})}),null);

@@ -1,1 +1,0 @@
-(function(){var a=window;if("undefined"!==typeof a.tcFif&&"undefined"!==typeof a.tcSlotPos&&"undefined"!==typeof a.tcTagPos)window.parent.tagcade.displayAds.triggerDefault(a.tcSlotPos,a.tcTagPos);else{for(var b="";20>b.length;)b+=Math.random().toString(32).substr(2);for(b="tcdef-"+b.substr(0,20);a!=top;)a=a.parent,a.postMessage(b,"*")}})();
